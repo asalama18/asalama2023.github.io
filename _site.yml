@@ -4,5 +4,5 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Beer EDA"
+    - text: "Case Study 1"
       href: beer_study.html
