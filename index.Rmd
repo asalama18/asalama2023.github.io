@@ -1,0 +1,32 @@
+---
+title: "Simple Website"
+author: "Ahmad Salama"
+date: "2023-11-06"
+output: html_document
+---
+# Load the shiny library
+library(shiny)
+
+# Define the UI for the Shiny app
+ui <- fluidPage(
+  tabsetPanel(
+    tabPanel(title = "About Me", 
+    tags$h2("About Me"),
+      tags$p("Name: John Doe"),
+      tags$img(src = "your_image.jpg", width = 200),
+      tags$p("Location: New York"),
+      tags$p("Interests: Photography, Hiking, Cooking"),
+      tags$p("Work: Software Engineer"),
+      tags$p("Education: B.S. in Computer Science"),
+      tags$div(
+        tags$p("The other tabs represent work / analyses that I have completed. Please check them out!"),
+        style = "text-align: center; font-style: italic;"
+      )
+    )
+  )
+)
+
+
+
+# Run the Shiny app
+shinyApp(ui = ui, server = server)
