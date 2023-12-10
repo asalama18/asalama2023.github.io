@@ -8,3 +8,5 @@ navbar:
       href: beer_study.html
     - text: "About Me"
       href: about_me.html
+    - text: "Case Study 2"
+      href: case_study_2.html
